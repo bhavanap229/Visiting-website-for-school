@@ -1,0 +1,99 @@
+footer {
+	background: #101010;
+	padding: 100px;
+}
+.single-box{
+    width: 300px;
+    align-items: center;
+}
+
+.single-box img{
+    height: 100px;
+    width: 300px;
+}
+.single-box .call , .email, .location i{
+    color: #FCDDB0;
+}
+.single-box p {
+	color: #fff;
+    margin-top: 10px;
+	line-height: 1.5;
+}
+.single-box h3 {
+	font-size: 16px;
+    margin-top: 10px;
+	font-weight: 600;
+	color: #fff;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+    margin-top: 10px;
+	color: #fff;
+	line-height: 3;
+	font-weight: 100;
+}
+.single-box h2 {
+	color: #fff;
+    margin-top: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.single-box h2::before{
+    background-color: #e91e63;
+    height: 2px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 50px;
+    margin-top: 30px ;
+    content: '';
+}
+
+.single-box .list-border{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 280px;
+    height: 150px;
+    border: 1px solid white;
+}
+
+.single-box .list-border hr{
+    color: white;
+    width: 100%;
+    line-height: 2;
+}
+
+.single-box ul li {
+    color: white;
+    line-height: 2.5;
+    width: 100%;
+}
+
+.single-box ul li span{
+    width: 40%;
+    float: left;
+}
+
+.single-box ul li .time{
+    width: 60%;
+    float: right;
+}
+
+.single-box ul li .closed{
+    color: #FCDDB0;
+}
+
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}

@@ -1,0 +1,282 @@
+/* about us section of home page */
+.section {
+    width: 100%;
+    min-height: 500px;
+    background-color: #ddd;
+}
+
+.section hr {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container_about {
+    width: 80%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    border: 2px solid #000000;
+    height: 300px;
+}
+
+.content-section .title_about h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.content-section .title_about h1::before{
+    background-color: #e91e63;
+    height: 2px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 50px;
+    margin-top: 40px ;
+    content: '';
+}
+
+.content-section .content_about h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.content-section .content_about h3:hover {
+    color: blue;
+}
+
+.content-section .content_about p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .content_about .button {
+    margin-top: 30px;
+}
+
+.content-section .content_about .button a {
+    background-color: #3d3d3d;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.content-section .content_about .button a:hover {
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container_about {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title_about {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content_about .button {
+        text-align: center;
+    }
+
+    .content-section .content_about .button a {
+        padding: 9px 30px;
+    }
+
+}
+
+/* photo gallery section of home page */
+.gallery {
+    padding: 80px 0px;
+    background-color: #B2B2B2;
+}
+
+.gallery .title_gallery h1 {
+    color: #000000;
+    margin-left: 110px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.gallery .title_gallery h1::before {
+    background-color: #e91e63;
+    height: 2px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 50px;
+    margin-top: 40px ;
+    content: '';
+}
+
+.container-lg{
+    margin-top: 30px;
+}
+.gallery img {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    height: 250px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+#gallery-popup .modal-img {
+    width: 100%;
+}
+
+.container-image {
+    background-color: #000;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+
+.container-image * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.container-image h3 {
+    background-color: #000000;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.container-image:before,
+.container-image:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #000000;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.container-image:before {
+    -webkit-transform: skew(45deg) translateX(-155%);
+    transform: skew(45deg) translateX(-155%);
+}
+
+.container-image:after {
+    -webkit-transform: skew(45deg) translateX(155%);
+    transform: skew(45deg) translateX(155%);
+}
+
+.container-image img {
+    backface-visibility: hidden;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.container-image figcaption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+.container-image a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.container-image:hover>img,
+.container-image.hover>img {
+    opacity: 0.9;
+}
+
+.container-image:hover:before,
+.container-image.hover:before {
+    -webkit-transform: skew(45deg) translateX(-55%);
+    transform: skew(45deg) translateX(-55%);
+}
+
+.container-image:hover:after,
+.container-image.hover:after {
+    -webkit-transform: skew(45deg) translateX(55%);
+    transform: skew(45deg) translateX(55%);
+}
+
+.container-image:hover figcaption,
+.container-image.hover figcaption {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

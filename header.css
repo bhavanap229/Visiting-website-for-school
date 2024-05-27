@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.header {
+    background-color: rgb(252, 248, 243);
+    text-align: start;
+
+}
+
+.school_info {
+    display: inline-block;
+}
+
+.school_logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.email_info {
+    display: inline-block;
+}
+
+.email_logo {
+    padding-right: 10;
+    margin-left: 420px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.email_text {
+    text-align: start;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(94, 90, 90);
+    vertical-align: middle;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.email_text:hover{
+    color: blue;
+}
+
+.location_info {
+    display: inline-block;
+}
+
+.location_logo {
+    padding-right: 10;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location_text {
+    text-align: start;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(94, 90, 90);
+    vertical-align: middle;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.location_text:hover{
+    color: blue;
+}
+
+@media (max-width:768px) {
+    .school_info {
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        position: relative;
+    }
+
+    .email_logo{
+        margin: auto;
+    }
+
+    .email_info {
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+
+    .location_logo{
+        margin: auto;
+    }
+
+    .location_info {
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+}
+

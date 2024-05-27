@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body>
+    <!-- Navigationbar -->
+    <nav>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="academic.html">School & Academic</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="photogallery.html">Photo Gallery</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="ad_enquiry.html">Admission Enquiry</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Divider: Google Map -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Google Map HTML Codes -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.8601329053986!2d72.86027596485671!3d21.157963785928516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f9969867097%3A0xe1d455d90897d89e!2sDnyanmandir%20Primary%20School!5e0!3m2!1sen!2sin!4v1663950193890!5m2!1sen!2sin"
+                    width="100%" height="500" style="border: 0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Google Map Javascript Codes -->
+                <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
+                <script src="js/google-map-init.js"></script>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contactus -->
+    <div class="container-cs">
+        <span class="big-circle"></span>
+        <img src="shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <div class="email_info">
+                    <div class='email_logo'>
+                        <img src="mail.png" alt="Email logo" width="55" height="55">
+                    </div>
+                    <div class='email_text'>
+                        Email Address
+                        <div class='email_address' style="font-size:15px; color: rgb(10, 1, 1);">
+                            dnyanmandirpschool@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="call_info">
+                    <div class='call_logo'>
+                        <img src="call.png" alt="Email logo" width="55" height="55">
+                    </div>
+                    <div class='call_text'>
+                        Call-us-on
+                        <div class='email_address' style="font-size:15px; color: rgb(10, 1, 1);">
+                            7878950432
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="location_info">
+                    <div class='location_logo'>
+                        <img src="location.png" alt="Email logo" width="55" height="55">
+                    </div>
+                    <div class='location_text'>
+                        Location
+                        <div class='location' style="font-size:15px; color: rgb(10, 1, 1);">
+                            3, Harihar Nagar Navagam<br>
+                            Dindoli Road Surat
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="sub" class="input" />
+                        <label for="">Subject</label>
+                        <span>Subject</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <button class="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="contactus.js"></script>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="footerlogo.png" alt="">
+                        <p>The future belongs to those who believe in the beauty of "DREAMS"!</p>
+                        <h3>Welcome To Our School!</h3>
+                        <ul class="list">
+                            <li class="call"><i class="fa fa-phone"></i><a class="text-gray" href="#"> 
+                                7878950432</a></li>
+                            <li class="email"><i class="fa fa-envelope"></i><a class="text-gray" href="dnyanmandirpschool@gmail.com">
+                                    dnyanmandirpschool@gmail.com</a> </li>
+                            <li class="location"><i class="fas fa-map-marker-alt"></i><a class="text-gray" href="contactus.html"> 3,
+                                    Harihar Nagar Navagam</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="academic.html">School & Academic</a></li>
+                            <li><a href="academic.html">Beyond Academic</a></li>
+                            <li><a href="academic.html">Teaching Staff</a></li>
+                            <li><a href="#">Time-table</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="photogallery.html">Photo Gallery</a></li>
+                            <li><a href="contactus.html">Contact us</a></li>
+                            <li><a href="ad_enquiry.html">Admission Criteria</a></li>
+                            <li><a href="ad_enquiry.html">Admission Enquiry</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Opening Hours</h2>
+                        <ul class="list-border">
+                            <li><span>Mon - Fri  :  </span>
+                                <div class="time">7.00 am - 5.00 pm </div>
+                            </li>
+                            <hr>
+                            <li><span>Sat  : </span>
+                                <div class="time">7.00 pm - 3.00 pm </div>
+                            </li>
+                            <hr>
+                            <li><span>Sun  : </span>
+                                <div class="closed">Closed </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js">
+
+</body>
+
+</html>
